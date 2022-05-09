@@ -26,6 +26,7 @@ class RestaurantTableViewCell: UITableViewCell {
     private var sourceImage: UIImageView = {
         let sourceImage = UIImageView()
         sourceImage.contentMode = .scaleAspectFill
+        sourceImage.image = UIImage.placeholderImage
         return sourceImage
     }()
     private var restaurantId: String?
@@ -92,7 +93,7 @@ class RestaurantTableViewCell: UITableViewCell {
         self.nameLabel.text = restaurant.name
         self.addressLabel.text = restaurant.address?.fullAddress
         if let rating = restaurant.aggregateRating?.thefork?.ratingValue {
-            self.ratingLabel.text = "ratingWith".localized(with: [rating])
+            self.ratingLabel.text = "ratingWith".localized(with: [rating.description])
         }
         self.restaurantId = restaurant.uuid
         self.isFavorite = isFavorite
@@ -106,14 +107,14 @@ class RestaurantTableViewCell: UITableViewCell {
         }
     }
     
-    @objc func didTapFavoriteButton(){
+    @objc private func didTapFavoriteButton() {
         isFavorite = !isFavorite
         guard let restaurantId = restaurantId else { return }
         try? UserDefaultsManager.shared.set(object: isFavorite, forKey: restaurantId)
         self.setFavButtonImage()
     }
     
-    func setFavButtonImage() {
+    private func setFavButtonImage() {
         let image = isFavorite ? UIImage.filledHeartIcon : UIImage.emptyHeartIcon
         favoriteButton.setImage(image, for: .normal)
     }

@@ -27,7 +27,7 @@ public class UserDefaultsManager: UserDefaultsManagerInterface {
     
     private init() { }
     
-    public func set<T:Codable>(object: T, forKey key: String) throws {
+    public func set<T: Codable>(object: T, forKey key: String) throws {
         do {
             let objectToStore = try jsonEncoder.encode(object)
             UserDefaults.standard.setValue(objectToStore, forKey: key)

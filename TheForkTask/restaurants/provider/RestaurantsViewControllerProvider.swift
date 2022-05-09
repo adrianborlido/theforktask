@@ -14,6 +14,7 @@ protocol RestaurantsProviderInterface {
     var restaurants: [Restaurant]? { get }
     
     func getRestaurants()
+    func sortRestaurants(by: SortType)
     
     init(delegate: RestaurantsProviderDelegate, repository: RestaurantsRepositoryInterface)
 }
@@ -46,4 +47,14 @@ class RestaurantsProvider: RestaurantsProviderInterface {
                 self?.delegate?.getRestaurantsFailed()
         }
     }
+    
+    func sortRestaurants(by type: SortType) {
+        switch type {
+        case .name:
+            self.restaurants = restaurants?.sorted(by: {$0.name ?? "" < $1.name ?? "" })
+        case .rating:
+            self.restaurants = restaurants?.sorted(by: {$0.aggregateRating?.thefork?.ratingValue ?? 0.0 > $1.aggregateRating?.thefork?.ratingValue ?? 0.0 })
+        }
+    }
+    
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class RestaurantsViewController: UIViewController {
-    lazy var tableView: UITableView = {
+    private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .none
@@ -48,14 +48,21 @@ class RestaurantsViewController: UIViewController {
         alert.view.tintColor = .forkLightGreen
         
         alert.addAction(UIAlertAction(title: "name".localized, style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+            self.sortRestaurants(by: .name)
             self.tableView.reloadData()
         }))
         alert.addAction(UIAlertAction(title: "rating".localized, style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+            self.sortRestaurants(by: .rating)
             self.tableView.reloadData()
         }))
         alert.addAction(UIAlertAction(title: "cancel".localized, style: UIAlertAction.Style.cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func sortRestaurants(by sortType: SortType) {
+        provider?.sortRestaurants(by: sortType)
+        tableView.reloadData()
     }
 }
 
@@ -68,12 +75,12 @@ extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantTableViewCell.identifier, for: indexPath as IndexPath) as? RestaurantTableViewCell,
-              let restaurant =  provider?.restaurants?[indexPath.row] else {
+              let restaurant = provider?.restaurants?[indexPath.row],
+              let uuid = restaurant.uuid else {
                   return UITableViewCell()
               }
-        let isFavorite = try? UserDefaultsManager.shared.getObject(forKey: restaurant.uuid ?? "", ofType: Bool.self)
+        let isFavorite = try? UserDefaultsManager.shared.getObject(forKey: uuid, ofType: Bool.self)
         cell.setData(restaurant: restaurant, isFavorite: isFavorite ?? false)
-        cell.layoutSubviews()
         return cell
     }
     
@@ -81,6 +88,8 @@ extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource 
         return 120+tableView.frame.size.width*344/612
     }
 }
+
+// MARK: - RestaurantsProviderDelegate
 
 extension RestaurantsViewController: RestaurantsProviderDelegate {
     func getRestaurantsSucceed() {

@@ -23,11 +23,11 @@ class RestaurantsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Restaurants"
+        title = "restaurants".localized
         view.backgroundColor = .darkGray
         
         navigationController?.navigationBar.isHidden = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(didTapSort))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "sort".localized, style: .plain, target: self, action: #selector(didTapSort))
         navigationItem.rightBarButtonItem?.tintColor = .forkLightGreen
         
         view.addSubview(tableView)
@@ -44,16 +44,16 @@ class RestaurantsViewController: UIViewController {
     }
     
     @objc private func didTapSort() {
-        let alert = UIAlertController(title: "SORT BY", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "sortBy".localized, message: nil, preferredStyle: .alert)
         alert.view.tintColor = .forkLightGreen
         
-        alert.addAction(UIAlertAction(title: "Name", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "name".localized, style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
             self.tableView.reloadData()
         }))
-        alert.addAction(UIAlertAction(title: "Rating", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "rating".localized, style: UIAlertAction.Style.default, handler: { (action: UIAlertAction!) in
             self.tableView.reloadData()
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "cancel".localized, style: UIAlertAction.Style.cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
     }

@@ -15,6 +15,8 @@
 		DD54B99E2827833300914881 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B99D2827833300914881 /* UIColor+Extension.swift */; };
 		DD54B9A12828466900914881 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B9A02828466900914881 /* UIImage+Extension.swift */; };
 		DD54B9A62829671900914881 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B9A52829671900914881 /* UserDefaultsManager.swift */; };
+		DD54B9AB2829736600914881 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD54B9AD2829736600914881 /* Localizable.strings */; };
+		DD54B9AF282973A400914881 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B9AE282973A400914881 /* String+Extension.swift */; };
 		DD76F9632826DBA700B6B2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9622826DBA700B6B2F8 /* AppDelegate.swift */; };
 		DD76F9652826DBA700B6B2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9642826DBA700B6B2F8 /* SceneDelegate.swift */; };
 		DD76F9672826DBA700B6B2F8 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9662826DBA700B6B2F8 /* RestaurantsViewController.swift */; };
@@ -64,6 +66,8 @@
 		DD54B99D2827833300914881 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DD54B9A02828466900914881 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		DD54B9A52829671900914881 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		DD54B9AC2829736600914881 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD54B9AE282973A400914881 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		DD76F95F2826DBA700B6B2F8 /* TheForkTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheForkTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD76F9622826DBA700B6B2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD76F9642826DBA700B6B2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			children = (
 				DD54B99D2827833300914881 /* UIColor+Extension.swift */,
 				DD54B9A02828466900914881 /* UIImage+Extension.swift */,
+				DD54B9AE282973A400914881 /* String+Extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				DD76F96B2826DBAA00B6B2F8 /* Assets.xcassets */,
 				DD76F96D2826DBAA00B6B2F8 /* LaunchScreen.storyboard */,
 				DD76F9702826DBAA00B6B2F8 /* Info.plist */,
+				DD54B9AD2829736600914881 /* Localizable.strings */,
 			);
 			path = TheForkTask;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD76F96F2826DBAA00B6B2F8 /* LaunchScreen.storyboard in Resources */,
+				DD54B9AB2829736600914881 /* Localizable.strings in Resources */,
 				DD76F96C2826DBAA00B6B2F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +496,7 @@
 				DD76F99B2826EB9100B6B2F8 /* Address.swift in Sources */,
 				DD76F9992826E86C00B6B2F8 /* Restaurant.swift in Sources */,
 				DD54B996282769F500914881 /* RestaurantsRouter.swift in Sources */,
+				DD54B9AF282973A400914881 /* String+Extension.swift in Sources */,
 				DD76F9972826E7C900B6B2F8 /* RestaurantsViewControllerProvider.swift in Sources */,
 				DD76F9A12826EBD900B6B2F8 /* MainPhoto.swift in Sources */,
 				DD76F9AA2827068600B6B2F8 /* RestClient.swift in Sources */,
@@ -540,6 +548,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DD54B9AD2829736600914881 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD54B9AC2829736600914881 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DD76F96D2826DBAA00B6B2F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

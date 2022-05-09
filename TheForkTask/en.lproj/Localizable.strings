@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  TheForkTask
+
+  Created by Adrian Borlido on 9/5/22.
+  
+*/
+
+"restaurants" = "Restaurants";
+"sort" = "Sort";
+"sortBy" = "SORT BY";
+"name" = "Name";
+"rating" = "Rating";
+"ratingWith" = "Rating: %@";
+"cancel" = "Cancel";

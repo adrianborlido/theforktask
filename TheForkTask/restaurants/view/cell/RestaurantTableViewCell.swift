@@ -92,7 +92,7 @@ class RestaurantTableViewCell: UITableViewCell {
         self.nameLabel.text = restaurant.name
         self.addressLabel.text = restaurant.address?.fullAddress
         if let rating = restaurant.aggregateRating?.thefork?.ratingValue {
-            self.ratingLabel.text = "Rating: \(rating)"
+            self.ratingLabel.text = "ratingWith".localized(with: [rating])
         }
         self.restaurantId = restaurant.uuid
         self.isFavorite = isFavorite

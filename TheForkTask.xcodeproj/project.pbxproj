@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6375DF91FACFDFA656D85D2E /* Pods_TheForkTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A016C151C3AEE70042C4F0 /* Pods_TheForkTask.framework */; };
+		D493FE48604A076FE080FCB7 /* Pods_TheForkTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE2FF743E7AD4CAE79011FB /* Pods_TheForkTaskTests.framework */; };
+		DD54B996282769F500914881 /* RestaurantsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B995282769F500914881 /* RestaurantsRouter.swift */; };
+		DD54B9982827724300914881 /* RestaurantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B9972827724300914881 /* RestaurantsResponse.swift */; };
+		DD54B99C2827780F00914881 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B99B2827780F00914881 /* RestaurantTableViewCell.swift */; };
+		DD54B99E2827833300914881 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B99D2827833300914881 /* UIColor+Extension.swift */; };
+		DD54B9A12828466900914881 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B9A02828466900914881 /* UIImage+Extension.swift */; };
+		DD54B9A62829671900914881 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54B9A52829671900914881 /* UserDefaultsManager.swift */; };
+		DD76F9632826DBA700B6B2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9622826DBA700B6B2F8 /* AppDelegate.swift */; };
+		DD76F9652826DBA700B6B2F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9642826DBA700B6B2F8 /* SceneDelegate.swift */; };
+		DD76F9672826DBA700B6B2F8 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9662826DBA700B6B2F8 /* RestaurantsViewController.swift */; };
+		DD76F96C2826DBAA00B6B2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD76F96B2826DBAA00B6B2F8 /* Assets.xcassets */; };
+		DD76F96F2826DBAA00B6B2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD76F96D2826DBAA00B6B2F8 /* LaunchScreen.storyboard */; };
+		DD76F97A2826DBAA00B6B2F8 /* TheForkTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9792826DBAA00B6B2F8 /* TheForkTaskTests.swift */; };
+		DD76F9842826DBAA00B6B2F8 /* TheForkTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9832826DBAA00B6B2F8 /* TheForkTaskUITests.swift */; };
+		DD76F9862826DBAA00B6B2F8 /* TheForkTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9852826DBAA00B6B2F8 /* TheForkTaskUITestsLaunchTests.swift */; };
+		DD76F9972826E7C900B6B2F8 /* RestaurantsViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9962826E7C900B6B2F8 /* RestaurantsViewControllerProvider.swift */; };
+		DD76F9992826E86C00B6B2F8 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9982826E86C00B6B2F8 /* Restaurant.swift */; };
+		DD76F99B2826EB9100B6B2F8 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F99A2826EB9100B6B2F8 /* Address.swift */; };
+		DD76F99D2826EBA500B6B2F8 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F99C2826EBA500B6B2F8 /* Rating.swift */; };
+		DD76F99F2826EBB100B6B2F8 /* AggregateRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F99E2826EBB100B6B2F8 /* AggregateRating.swift */; };
+		DD76F9A12826EBD900B6B2F8 /* MainPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9A02826EBD900B6B2F8 /* MainPhoto.swift */; };
+		DD76F9A32826EDD600B6B2F8 /* RestaurantsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9A22826EDD600B6B2F8 /* RestaurantsRepository.swift */; };
+		DD76F9AA2827068600B6B2F8 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9A92827068600B6B2F8 /* RestClient.swift */; };
+		DD76F9AC28270A8700B6B2F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76F9AB28270A8700B6B2F8 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD76F9762826DBAA00B6B2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD76F9572826DBA700B6B2F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD76F95E2826DBA700B6B2F8;
+			remoteInfo = TheForkTask;
+		};
+		DD76F9802826DBAA00B6B2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD76F9572826DBA700B6B2F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD76F95E2826DBA700B6B2F8;
+			remoteInfo = TheForkTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A016C151C3AEE70042C4F0 /* Pods_TheForkTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheForkTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D6A9503C62E70C4CCDBF45 /* Pods-TheForkTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheForkTask.debug.xcconfig"; path = "Target Support Files/Pods-TheForkTask/Pods-TheForkTask.debug.xcconfig"; sourceTree = "<group>"; };
+		7BE2FF743E7AD4CAE79011FB /* Pods_TheForkTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheForkTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AB85DBE5770080F2A85BB8 /* Pods-TheForkTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheForkTaskTests.release.xcconfig"; path = "Target Support Files/Pods-TheForkTaskTests/Pods-TheForkTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		879AEB3D058BB33B7A30EEA3 /* Pods-TheForkTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheForkTask.release.xcconfig"; path = "Target Support Files/Pods-TheForkTask/Pods-TheForkTask.release.xcconfig"; sourceTree = "<group>"; };
+		C488AE53A82241D07A915982 /* Pods-TheForkTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheForkTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-TheForkTaskTests/Pods-TheForkTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD54B995282769F500914881 /* RestaurantsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsRouter.swift; sourceTree = "<group>"; };
+		DD54B9972827724300914881 /* RestaurantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsResponse.swift; sourceTree = "<group>"; };
+		DD54B99B2827780F00914881 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		DD54B99D2827833300914881 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DD54B9A02828466900914881 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DD54B9A52829671900914881 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		DD76F95F2826DBA700B6B2F8 /* TheForkTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheForkTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD76F9622826DBA700B6B2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD76F9642826DBA700B6B2F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD76F9662826DBA700B6B2F8 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		DD76F96B2826DBAA00B6B2F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD76F96E2826DBAA00B6B2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD76F9702826DBAA00B6B2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD76F9752826DBAA00B6B2F8 /* TheForkTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheForkTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD76F9792826DBAA00B6B2F8 /* TheForkTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForkTaskTests.swift; sourceTree = "<group>"; };
+		DD76F97F2826DBAA00B6B2F8 /* TheForkTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheForkTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD76F9832826DBAA00B6B2F8 /* TheForkTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForkTaskUITests.swift; sourceTree = "<group>"; };
+		DD76F9852826DBAA00B6B2F8 /* TheForkTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForkTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD76F9962826E7C900B6B2F8 /* RestaurantsViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewControllerProvider.swift; sourceTree = "<group>"; };
+		DD76F9982826E86C00B6B2F8 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		DD76F99A2826EB9100B6B2F8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		DD76F99C2826EBA500B6B2F8 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		DD76F99E2826EBB100B6B2F8 /* AggregateRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRating.swift; sourceTree = "<group>"; };
+		DD76F9A02826EBD900B6B2F8 /* MainPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPhoto.swift; sourceTree = "<group>"; };
+		DD76F9A22826EDD600B6B2F8 /* RestaurantsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsRepository.swift; sourceTree = "<group>"; };
+		DD76F9A92827068600B6B2F8 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		DD76F9AB28270A8700B6B2F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD76F95C2826DBA700B6B2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6375DF91FACFDFA656D85D2E /* Pods_TheForkTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD76F9722826DBAA00B6B2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D493FE48604A076FE080FCB7 /* Pods_TheForkTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD76F97C2826DBAA00B6B2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89CA9E1F7B15C635D142B61A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A016C151C3AEE70042C4F0 /* Pods_TheForkTask.framework */,
+				7BE2FF743E7AD4CAE79011FB /* Pods_TheForkTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD54B99328270E6D00914881 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9A92827068600B6B2F8 /* RestClient.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		DD54B994282769D500914881 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				DD54B995282769F500914881 /* RestaurantsRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		DD54B999282777EC00914881 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9662826DBA700B6B2F8 /* RestaurantsViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DD54B99A282777F400914881 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD54B99B2827780F00914881 /* RestaurantTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		DD54B99F2827833C00914881 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD54B99D2827833300914881 /* UIColor+Extension.swift */,
+				DD54B9A02828466900914881 /* UIImage+Extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		DD54B9A42829671000914881 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				DD54B9A52829671900914881 /* UserDefaultsManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		DD76F9562826DBA700B6B2F8 = {
+			isa = PBXGroup;
+			children = (
+				DD76F9612826DBA700B6B2F8 /* TheForkTask */,
+				DD76F9782826DBAA00B6B2F8 /* TheForkTaskTests */,
+				DD76F9822826DBAA00B6B2F8 /* TheForkTaskUITests */,
+				DD76F9602826DBA700B6B2F8 /* Products */,
+				F5F517151E9F01C63E212012 /* Pods */,
+				89CA9E1F7B15C635D142B61A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD76F9602826DBA700B6B2F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F95F2826DBA700B6B2F8 /* TheForkTask.app */,
+				DD76F9752826DBAA00B6B2F8 /* TheForkTaskTests.xctest */,
+				DD76F97F2826DBAA00B6B2F8 /* TheForkTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD76F9612826DBA700B6B2F8 /* TheForkTask */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9A82827066E00B6B2F8 /* util */,
+				DD76F9922826E41600B6B2F8 /* restaurants */,
+				DD76F9622826DBA700B6B2F8 /* AppDelegate.swift */,
+				DD76F9642826DBA700B6B2F8 /* SceneDelegate.swift */,
+				DD76F96B2826DBAA00B6B2F8 /* Assets.xcassets */,
+				DD76F96D2826DBAA00B6B2F8 /* LaunchScreen.storyboard */,
+				DD76F9702826DBAA00B6B2F8 /* Info.plist */,
+			);
+			path = TheForkTask;
+			sourceTree = "<group>";
+		};
+		DD76F9782826DBAA00B6B2F8 /* TheForkTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9792826DBAA00B6B2F8 /* TheForkTaskTests.swift */,
+			);
+			path = TheForkTaskTests;
+			sourceTree = "<group>";
+		};
+		DD76F9822826DBAA00B6B2F8 /* TheForkTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9832826DBAA00B6B2F8 /* TheForkTaskUITests.swift */,
+				DD76F9852826DBAA00B6B2F8 /* TheForkTaskUITestsLaunchTests.swift */,
+			);
+			path = TheForkTaskUITests;
+			sourceTree = "<group>";
+		};
+		DD76F9922826E41600B6B2F8 /* restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9952826E7B200B6B2F8 /* model */,
+				DD76F9932826E42900B6B2F8 /* view */,
+				DD76F9942826E79400B6B2F8 /* provider */,
+			);
+			path = restaurants;
+			sourceTree = "<group>";
+		};
+		DD76F9932826E42900B6B2F8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DD54B99A282777F400914881 /* cell */,
+				DD54B999282777EC00914881 /* controller */,
+				DD54B994282769D500914881 /* router */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DD76F9942826E79400B6B2F8 /* provider */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9962826E7C900B6B2F8 /* RestaurantsViewControllerProvider.swift */,
+				DD76F9A22826EDD600B6B2F8 /* RestaurantsRepository.swift */,
+			);
+			path = provider;
+			sourceTree = "<group>";
+		};
+		DD76F9952826E7B200B6B2F8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9982826E86C00B6B2F8 /* Restaurant.swift */,
+				DD76F99A2826EB9100B6B2F8 /* Address.swift */,
+				DD76F99C2826EBA500B6B2F8 /* Rating.swift */,
+				DD76F99E2826EBB100B6B2F8 /* AggregateRating.swift */,
+				DD76F9A02826EBD900B6B2F8 /* MainPhoto.swift */,
+				DD54B9972827724300914881 /* RestaurantsResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DD76F9A82827066E00B6B2F8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DD76F9AB28270A8700B6B2F8 /* Constants.swift */,
+				DD54B9A42829671000914881 /* managers */,
+				DD54B99F2827833C00914881 /* extensions */,
+				DD54B99328270E6D00914881 /* network */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F5F517151E9F01C63E212012 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13D6A9503C62E70C4CCDBF45 /* Pods-TheForkTask.debug.xcconfig */,
+				879AEB3D058BB33B7A30EEA3 /* Pods-TheForkTask.release.xcconfig */,
+				C488AE53A82241D07A915982 /* Pods-TheForkTaskTests.debug.xcconfig */,
+				84AB85DBE5770080F2A85BB8 /* Pods-TheForkTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD76F95E2826DBA700B6B2F8 /* TheForkTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD76F9892826DBAA00B6B2F8 /* Build configuration list for PBXNativeTarget "TheForkTask" */;
+			buildPhases = (
+				F4114B468CD69CBDB307543E /* [CP] Check Pods Manifest.lock */,
+				DD76F95B2826DBA700B6B2F8 /* Sources */,
+				DD76F95C2826DBA700B6B2F8 /* Frameworks */,
+				DD76F95D2826DBA700B6B2F8 /* Resources */,
+				0A2E28611BD4E3912E3CD799 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheForkTask;
+			productName = TheForkTask;
+			productReference = DD76F95F2826DBA700B6B2F8 /* TheForkTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD76F9742826DBAA00B6B2F8 /* TheForkTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD76F98C2826DBAA00B6B2F8 /* Build configuration list for PBXNativeTarget "TheForkTaskTests" */;
+			buildPhases = (
+				25646CB17FD19AA144BAE171 /* [CP] Check Pods Manifest.lock */,
+				DD76F9712826DBAA00B6B2F8 /* Sources */,
+				DD76F9722826DBAA00B6B2F8 /* Frameworks */,
+				DD76F9732826DBAA00B6B2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD76F9772826DBAA00B6B2F8 /* PBXTargetDependency */,
+			);
+			name = TheForkTaskTests;
+			productName = TheForkTaskTests;
+			productReference = DD76F9752826DBAA00B6B2F8 /* TheForkTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD76F97E2826DBAA00B6B2F8 /* TheForkTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD76F98F2826DBAA00B6B2F8 /* Build configuration list for PBXNativeTarget "TheForkTaskUITests" */;
+			buildPhases = (
+				DD76F97B2826DBAA00B6B2F8 /* Sources */,
+				DD76F97C2826DBAA00B6B2F8 /* Frameworks */,
+				DD76F97D2826DBAA00B6B2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD76F9812826DBAA00B6B2F8 /* PBXTargetDependency */,
+			);
+			name = TheForkTaskUITests;
+			productName = TheForkTaskUITests;
+			productReference = DD76F97F2826DBAA00B6B2F8 /* TheForkTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD76F9572826DBA700B6B2F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DD76F95E2826DBA700B6B2F8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					DD76F9742826DBAA00B6B2F8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DD76F95E2826DBA700B6B2F8;
+					};
+					DD76F97E2826DBAA00B6B2F8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = DD76F95E2826DBA700B6B2F8;
+					};
+				};
+			};
+			buildConfigurationList = DD76F95A2826DBA700B6B2F8 /* Build configuration list for PBXProject "TheForkTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD76F9562826DBA700B6B2F8;
+			productRefGroup = DD76F9602826DBA700B6B2F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD76F95E2826DBA700B6B2F8 /* TheForkTask */,
+				DD76F9742826DBAA00B6B2F8 /* TheForkTaskTests */,
+				DD76F97E2826DBAA00B6B2F8 /* TheForkTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD76F95D2826DBA700B6B2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD76F96F2826DBAA00B6B2F8 /* LaunchScreen.storyboard in Resources */,
+				DD76F96C2826DBAA00B6B2F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD76F9732826DBAA00B6B2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD76F97D2826DBAA00B6B2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A2E28611BD4E3912E3CD799 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheForkTask/Pods-TheForkTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheForkTask/Pods-TheForkTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheForkTask/Pods-TheForkTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25646CB17FD19AA144BAE171 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheForkTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4114B468CD69CBDB307543E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheForkTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD76F95B2826DBA700B6B2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD76F99B2826EB9100B6B2F8 /* Address.swift in Sources */,
+				DD76F9992826E86C00B6B2F8 /* Restaurant.swift in Sources */,
+				DD54B996282769F500914881 /* RestaurantsRouter.swift in Sources */,
+				DD76F9972826E7C900B6B2F8 /* RestaurantsViewControllerProvider.swift in Sources */,
+				DD76F9A12826EBD900B6B2F8 /* MainPhoto.swift in Sources */,
+				DD76F9AA2827068600B6B2F8 /* RestClient.swift in Sources */,
+				DD76F9A32826EDD600B6B2F8 /* RestaurantsRepository.swift in Sources */,
+				DD54B99E2827833300914881 /* UIColor+Extension.swift in Sources */,
+				DD76F9672826DBA700B6B2F8 /* RestaurantsViewController.swift in Sources */,
+				DD76F99F2826EBB100B6B2F8 /* AggregateRating.swift in Sources */,
+				DD76F9632826DBA700B6B2F8 /* AppDelegate.swift in Sources */,
+				DD54B99C2827780F00914881 /* RestaurantTableViewCell.swift in Sources */,
+				DD54B9A12828466900914881 /* UIImage+Extension.swift in Sources */,
+				DD76F9652826DBA700B6B2F8 /* SceneDelegate.swift in Sources */,
+				DD54B9A62829671900914881 /* UserDefaultsManager.swift in Sources */,
+				DD76F99D2826EBA500B6B2F8 /* Rating.swift in Sources */,
+				DD76F9AC28270A8700B6B2F8 /* Constants.swift in Sources */,
+				DD54B9982827724300914881 /* RestaurantsResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD76F9712826DBAA00B6B2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD76F97A2826DBAA00B6B2F8 /* TheForkTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD76F97B2826DBAA00B6B2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD76F9842826DBAA00B6B2F8 /* TheForkTaskUITests.swift in Sources */,
+				DD76F9862826DBAA00B6B2F8 /* TheForkTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD76F9772826DBAA00B6B2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD76F95E2826DBA700B6B2F8 /* TheForkTask */;
+			targetProxy = DD76F9762826DBAA00B6B2F8 /* PBXContainerItemProxy */;
+		};
+		DD76F9812826DBAA00B6B2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD76F95E2826DBA700B6B2F8 /* TheForkTask */;
+			targetProxy = DD76F9802826DBAA00B6B2F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD76F96D2826DBAA00B6B2F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD76F96E2826DBAA00B6B2F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD76F9872826DBAA00B6B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD76F9882826DBAA00B6B2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD76F98A2826DBAA00B6B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D6A9503C62E70C4CCDBF45 /* Pods-TheForkTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHB6N64KHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheForkTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = borlido.TheForkTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD76F98B2826DBAA00B6B2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879AEB3D058BB33B7A30EEA3 /* Pods-TheForkTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHB6N64KHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheForkTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = borlido.TheForkTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD76F98D2826DBAA00B6B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C488AE53A82241D07A915982 /* Pods-TheForkTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHB6N64KHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = borlido.TheForkTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheForkTask.app/TheForkTask";
+			};
+			name = Debug;
+		};
+		DD76F98E2826DBAA00B6B2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84AB85DBE5770080F2A85BB8 /* Pods-TheForkTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHB6N64KHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = borlido.TheForkTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheForkTask.app/TheForkTask";
+			};
+			name = Release;
+		};
+		DD76F9902826DBAA00B6B2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHB6N64KHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = borlido.TheForkTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheForkTask;
+			};
+			name = Debug;
+		};
+		DD76F9912826DBAA00B6B2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHB6N64KHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = borlido.TheForkTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheForkTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD76F95A2826DBA700B6B2F8 /* Build configuration list for PBXProject "TheForkTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD76F9872826DBAA00B6B2F8 /* Debug */,
+				DD76F9882826DBAA00B6B2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD76F9892826DBAA00B6B2F8 /* Build configuration list for PBXNativeTarget "TheForkTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD76F98A2826DBAA00B6B2F8 /* Debug */,
+				DD76F98B2826DBAA00B6B2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD76F98C2826DBAA00B6B2F8 /* Build configuration list for PBXNativeTarget "TheForkTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD76F98D2826DBAA00B6B2F8 /* Debug */,
+				DD76F98E2826DBAA00B6B2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD76F98F2826DBAA00B6B2F8 /* Build configuration list for PBXNativeTarget "TheForkTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD76F9902826DBAA00B6B2F8 /* Debug */,
+				DD76F9912826DBAA00B6B2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD76F9572826DBA700B6B2F8 /* Project object */;
+}
